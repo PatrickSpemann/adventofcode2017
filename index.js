@@ -5,6 +5,7 @@ var day3 = require("./src/day3/day3");
 var day4 = require("./src/day4/day4");
 var day5 = require("./src/day5/day5");
 var day6 = require("./src/day6/day6");
+var day7 = require("./src/day7/day7");
 
 /*
 //day1
@@ -51,3 +52,11 @@ console.log(day6.normal(day6Input));
 console.log(day6.normal(day6TestInput, true));
 console.log(day6.normal(day6Input, true));
 */
+
+//day7
+var day7Input = fs.readFileSync("./src/day7/input.txt", "utf-8");
+var day7TestInput = fs.readFileSync("./src/day7/testinput.txt", "utf-8");
+console.log(day7.findRoot(day7TestInput));
+console.log(day7.findRoot(day7Input));
+day7.weight(day7TestInput);
+day7.weight(day7Input);
